@@ -1,11 +1,6 @@
 package br.edu.infnet.apptimes.model.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.*;
 
 import br.edu.infnet.apptimes.model.exceptions.EspecialidadeNuloException;
 import br.edu.infnet.apptimes.model.exceptions.IdadeNuloException;
@@ -13,6 +8,8 @@ import br.edu.infnet.apptimes.model.exceptions.InvestimentoNuloException;
 import br.edu.infnet.apptimes.model.exceptions.NomeNuloException;
 import br.edu.infnet.apptimes.model.exceptions.PosicaoNuloException;
 import br.edu.infnet.apptimes.model.exceptions.ScoreNuloException;
+
+import java.util.List;
 
 
 @Entity
@@ -25,11 +22,32 @@ public abstract class Profissional {
 	protected String nome;
 	protected float score;
 	protected int idade;
+	@ManyToOne
+	@JoinColumn(name = "idUsuario")
+	private Usuario usuario;
+	@ManyToMany(mappedBy = "profissionais")
+	private List<Time> times;
 	
 	public Profissional() {
 		
 	}
-	
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public List<Time> getTimes() {
+		return times;
+	}
+
+	public void setTimes(List<Time> times) {
+		this.times = times;
+	}
+
 	public Integer getId() {
 		return id;
 	}

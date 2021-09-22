@@ -20,6 +20,7 @@ public class UsuarioService {
 	}
 
 	public void incluir(Usuario usuario) {
+
 		usuarioRepository.save(usuario);
 	}
 	

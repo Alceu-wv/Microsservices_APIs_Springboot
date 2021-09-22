@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>APP2021 - Cadastra!!!</title>
+<title>AppTimes</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -17,32 +17,32 @@
 
 	    <div class="form-group">
 	      <label>Nome:</label>
-	      <input type="text" class="form-control"  name="nome">
+	      <input type="text" value="Pecanha" class="form-control"  name="nome">
 	    </div>
 
 	    <div class="form-group">
 	      <label>Score:</label>
-	      <input type="text" class="form-control" name="score">
+	      <input type="text" value="36" class="form-control" name="score">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Idade:</label>
-	      <input type="text" class="form-control"  name="idade">
+	      <input type="text" value="52" class="form-control"  name="idade">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Time Responsável:</label>
-	      <input type="text" class="form-control"  name="timeResponsavel">
+	      <input type="text" value="Mengão" class="form-control"  name="timeResponsavel">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Co-Dirigente:</label>
-	      <input type="text" class="form-control"  name="coDirigente">
+	      <input type="text" value="Rubel" class="form-control"  name="coDirigente">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Investimento Aplicado:</label>
-	      <input type="text" class="form-control"  name="investimentoAplicado">
+	      <input type="text" value="18.000" class="form-control"  name="investimentoAplicado">
 	    </div>
 		
 	    <button type="submit" class="btn btn-default">Cadastrar</button>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>APP2021 - Cadastra!!!</title>
+<title>AppTimes</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -18,22 +18,33 @@
 		</c:if>
 	
 	  <h2>Cadastramento de usuários</h2>
+	  
+	  <form action="/cep" class="form-inline" method="post">
+	  	<div class="form-group">
+	      <label>CEP:</label>
+	      <input type="text" class="form-control" value="${endereco.cep}" placeholder="" name="cep">
+	    </div>
+	    <button type="submit" class="btn btn-default">Buscar!</button>
+	  </form>
+	  
 	  <form action="/usuario" method="post">
 
 	    <div class="form-group">
 	      <label>Nome:</label>
-	      <input type="text" class="form-control" placeholder="Entre com o seu nome" name="nome">
+	      <input type="text" value="cascao" class="form-control" placeholder="Entre com o seu nome" name="nome">
 	    </div>
 
 	    <div class="form-group">
 	      <label>E-mail:</label>
-	      <input type="email" class="form-control" placeholder="Entre com o seu e-mail" name="email">
+	      <input type="email" value="cascao@turmadamonica.com" class="form-control" placeholder="Entre com o seu e-mail" name="email">
 	    </div>
 
 	    <div class="form-group">
 	      <label>Senha:</label>
-	      <input type="password" class="form-control" placeholder="Entre com a sua senha" name="senha">
+	      <input type="password" value="123" class="form-control" placeholder="Entre com a sua senha" name="senha">
 	    </div>
+	    
+		<c:import url="/WEB-INF/jsp/endereco.jsp"/>
 
 	    <button type="submit" class="btn btn-default">Cadastrar</button>
 	  </form>

@@ -12,6 +12,7 @@
       	  <li><a href="/dirigente/lista">Dirigentes</a></li>
       	  <li><a href="/tecnico/lista">Técnicos</a></li>
       	  <li><a href="/jogador/lista">Jogadores</a></li>
+          <li><a href="/time/lista">Times</a></li>
       </c:if>
     </ul>
     <ul class="nav navbar-nav navbar-right">

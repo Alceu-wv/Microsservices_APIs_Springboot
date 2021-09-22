@@ -17,32 +17,32 @@
 
 	    <div class="form-group">
 	      <label>Nome:</label>
-	      <input type="text" class="form-control"  name="nome">
+	      <input type="text" value="Steve Jobs" class="form-control"  name="nome">
 	    </div>
 
 	    <div class="form-group">
 	      <label>Score:</label>
-	      <input type="text" class="form-control" name="score">
+	      <input type="text" value="100" class="form-control" name="score">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Idade:</label>
-	      <input type="text" class="form-control"  name="idade">
+	      <input type="text" value="28" class="form-control"  name="idade">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Especialidade:</label>
-	      <input type="text" class="form-control"  name="especialidade">
+	      <input type="text" value="Design Patterns" class="form-control"  name="especialidade">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Anos de Experiência:</label>
-	      <input type="text" class="form-control"  name="anosDeExperiencia">
+	      <input type="text" value="12" class="form-control"  name="anosDeExperiencia">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Histórico Profissional:</label>
-	      <input type="text" class="form-control"  name="historicoProfissional">
+	      <input type="text" value="Fez uma cesta de 3 pontos com uma maca" class="form-control"  name="historicoProfissional">
 	    </div>
 		
 	    <button type="submit" class="btn btn-default">Cadastrar</button>

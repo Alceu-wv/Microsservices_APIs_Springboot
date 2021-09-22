@@ -17,13 +17,13 @@ public class DataLoader implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		Usuario usuario = new Usuario();
-		usuario.setNome("Elberth L C Moraes");
-		usuario.setEmail("elberth.moraes@prof.infnet.edu.br");
+		usuario.setNome("Alceu Colares");
+		usuario.setEmail("alceu@alceu.com");
 		usuario.setSenha("123");
 		usuario.setAdmin(true);
 		
 		usuarioService.incluir(usuario);
-		
-		System.out.println("Inclusão realizada!!!");
+
+		System.out.println("Inclusão de usuario " + usuario.getNome() + " realizada!!!");
 	}
 }

@@ -1,5 +1,6 @@
 package br.edu.infnet.apptimes.controller;
 
+import br.edu.infnet.apptimes.model.domain.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.apptimes.model.domain.Dirigente;
 import br.edu.infnet.apptimes.model.service.DirigenteService;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
 @Controller
 public class DirigenteController {
@@ -17,10 +19,13 @@ public class DirigenteController {
 	private DirigenteService dirigenteService;
 
 	@GetMapping(value = "/dirigente/lista")
-	public String telaLista(Model model) {
-		
-		model.addAttribute("dirigentes", dirigenteService.obterLista());
-		
+	public String telaLista(Model model, @SessionAttribute("user") Usuario usuario) {
+
+		if (usuario.isAdmin()) {
+			model.addAttribute("dirigentes", dirigenteService.obterLista());
+		} else {
+			model.addAttribute("dirigentes", dirigenteService.obterLista(usuario));
+		}
 		return "dirigente/lista";
 	}	
 	
@@ -30,17 +35,19 @@ public class DirigenteController {
 	}
 	
 	@PostMapping(value = "/dirigente/incluir")
-	public String incluir(Model model, Dirigente dirigente) {
+	public String incluir(Model model, Dirigente dirigente, @SessionAttribute("user") Usuario usuario) {
+
+		dirigente.setUsuario(usuario);
 		
 		dirigenteService.incluir(dirigente);
 		
 		model.addAttribute("msg", "Dirigente " + dirigente.getNome() + " cadastrado com sucesso!!!");
 		
-		return telaLista(model);
+		return telaLista(model, usuario);
 	}
 	
 	@GetMapping(value = "/dirigente/{id}/excluir")
-	public String excluir(Model model, @PathVariable Integer id) {
+	public String excluir(Model model, @PathVariable Integer id, @SessionAttribute("user") Usuario usuario) {
 		
 		Dirigente dirigente = dirigenteService.obterPorId(id);
 		
@@ -48,6 +55,6 @@ public class DirigenteController {
 		
 		model.addAttribute("msg", "Dirigente " + dirigente.getNome() + " removido com sucesso!!!");
 		
-		return telaLista(model);
+		return telaLista(model, usuario);
 	}
 }

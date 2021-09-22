@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>APP2021 - Cadastra!!!</title>
+<title>AppTimes</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -22,12 +22,12 @@
 
 	    <div class="form-group">
 	      <label>E-mail:</label>
-	      <input value="elberth.moraes@prof.infnet.edu.br" type="email" class="form-control" placeholder="Entre com o seu e-mail" name="email">
+	      <input value="alceu@alceu.com" type="email" class="form-control" placeholder="Entre com o seu e-mail" name="email">
 	    </div>
 
 	    <div class="form-group">
 	      <label>Senha:</label>
-	      <input value="elberth.moraes@prof.infnet.edu.br" type="password" class="form-control" placeholder="Entre com a sua senha" name="senha">
+	      <input value="123" type="password" class="form-control" placeholder="Entre com a sua senha" name="senha">
 	    </div>
 
 	    <button type="submit" class="btn btn-default">Acessar</button>

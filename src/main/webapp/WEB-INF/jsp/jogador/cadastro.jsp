@@ -17,32 +17,32 @@
 
 	    <div class="form-group">
 	      <label>Nome:</label>
-	      <input type="text" class="form-control"  name="nome">
+	      <input type="text" value="Michael Jordan" class="form-control"  name="nome">
 	    </div>
 
 	    <div class="form-group">
 	      <label>Score:</label>
-	      <input type="text" class="form-control" name="score">
+	      <input type="text" value="100" class="form-control" name="score">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Idade:</label>
-	      <input type="text" class="form-control"  name="idade">
+	      <input type="text" value="42" class="form-control"  name="idade">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Camisa número::</label>
-	      <input type="text" class="form-control"  name="camisa">
+	      <input type="text" value="23" class="form-control"  name="camisa">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Pontos por jogo:</label>
-	      <input type="text" class="form-control"  name="pontosPorJogo">
+	      <input type="text" value="43" class="form-control"  name="pontosPorJogo">
 	    </div>
 	    
 	    <div class="form-group">
 	      <label>Posição:</label>
-	      <input type="text" class="form-control"  name="posicao">
+	      <input type="text" value="Ala-pivo" class="form-control"  name="posicao">
 	    </div>
 		
 	    <button type="submit" class="btn btn-default">Cadastrar</button>
