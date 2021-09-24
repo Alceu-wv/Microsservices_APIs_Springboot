@@ -7,16 +7,21 @@
 <title>ApTimes</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-success p-2 text-dark bg-opacity-10">
 
 	<c:import url="/WEB-INF/jsp/menu.jsp"/>
-	
-	<div class="container">
-	  <h3>Java WEB</h3>
-	  <h4>AT</h4>
-	  
-	  <h1><p> <a href="https://https://github.com/Alceu-Junior">GITHUB de Alceu</a> </p></h1>
+
+	<div class="bg-success p-2 text-dark bg-opacity-10">
+		<div class="container">
+		  <h3>Java WEB</h3>
+		  <h4>AT</h4>
+
+		  <h1><a href="https://github.com/Alceu-Junior">GITHUB de Alceu</a></h1>
+		</div>
 	</div>
+
+
+
 
 </body>
 </html>

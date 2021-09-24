@@ -14,6 +14,9 @@ import org.springframework.web.bind.support.SessionStatus;
 import br.edu.infnet.apptimes.model.domain.Usuario;
 import br.edu.infnet.apptimes.model.service.UsuarioService;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @SessionAttributes("user")
 @Controller
 public class AcessoController {
@@ -22,6 +25,11 @@ public class AcessoController {
 	private UsuarioService usuarioService;
 
 	@GetMapping(value = "/")
+
+	Map<String, Integer> numerosApp = new HashMap<String, Integer>();
+	numerosApp.
+			put("Usuarios", usuarioService.get)
+
 	public String telaHome() {
 		return "index";
 	}
