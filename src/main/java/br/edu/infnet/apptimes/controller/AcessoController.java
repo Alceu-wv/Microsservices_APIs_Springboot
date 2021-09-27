@@ -25,11 +25,6 @@ public class AcessoController {
 	private UsuarioService usuarioService;
 
 	@GetMapping(value = "/")
-
-	Map<String, Integer> numerosApp = new HashMap<String, Integer>();
-	numerosApp.
-			put("Usuarios", usuarioService.get)
-
 	public String telaHome() {
 		return "index";
 	}
