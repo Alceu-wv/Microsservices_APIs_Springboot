@@ -10,10 +10,10 @@
 
 
 
-# AppTeams
+# VenturaHR
 
-AppTeams is a platform to register players and organize sport teams. 
-You can register different kinds of professionals and then build a team.
+VenturaHR is a platform for both companies and job seekers to make their match. 
+Each vacancy has its criteria, so the seeker should answer for.
 
 ## Installation
 
@@ -26,9 +26,12 @@ Use:
 
 ## Running Locally
 
-There is only services you showld run, in addition to the server SQL that showld be already running, with ports are already set:
+There are a few services you showld run, with ports are already set:
 * API WEB (port 8080)
+* API REST for users data and controll (port 8081)
+* API REST for companie vacancies data and controll (port 8082)
 * MySql database server (port 3306)
 
-Just run the SpringBoot application and the databases and its tables will be automatticaly mounted
+
+Just run the SpringBoot applications in wich service and the databases will be automatticaly mounted
 
